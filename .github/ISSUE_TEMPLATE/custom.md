@@ -1,9 +1,9 @@
 ---
 name: Custom issue template
-about: Describe hahahaha
-title: ''
-labels: ''
-assignees: ''
+about: This is a custom issue template
+title: 'Fix an issue'
+labels: 'color'
+assignees: 'bpanuco11'
 
 ---
 
