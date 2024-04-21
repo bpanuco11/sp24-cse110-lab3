@@ -1,0 +1,47 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+   
+    background-color: rgb(114, 209, 196); /* Lighter Yellow */ 
+    color: #000000; /* dark gray text color */
+}
+
+hr {
+    border: none;
+    height: 4px;
+    background-color: hsl(0, 0%, 0%); 
+}
+
+h1 {
+    color: #000000; 
+}
+h2 {
+    color: color(rgb(0 0 0));
+}
+h3 {
+    color: black; 
+}
+
+p {
+    color: color(color-mix(black, white));
+}
+
+#agenda-span {
+    background-color: rgb(33, 230, 63) /* Green */
+}
+
+#agenda-span2{
+
+    background-color: rgb(234, 112, 112) /* Green */
+}
+
+#important-color{
+    color: #eeff00; 
+}
+
+
+em.emphasis-color{
+    color:rgb(116, 121, 209);
+    font-weight: bold;
+}
