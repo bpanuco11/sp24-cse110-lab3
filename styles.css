@@ -1,7 +1,8 @@
 /* styles.css */
-
-body {
+* {
     font-family: Georgia, serif;
+}
+body {
     background-color: rgb(114, 209, 196); 
     color: #000000; /* dark gray text color */
 }
@@ -18,7 +19,7 @@ h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 h2 {
-    color: color(rgb(0 0 0));
+    color: color( rgba(0, 0, 0, 0.5));
     text-align: center;
     text-decoration: underline;
 }
@@ -50,12 +51,14 @@ footer {
     padding: 0.2cm; 
     margin: 0.4cm; 
 }
+
 .brain-2{
     text-align: left;  
 }
 .brain-1 #brain1-date{
     text-align: center;
 }
+
 .brain-2 #brain2-date{
     text-align: center;
 }
@@ -157,7 +160,7 @@ footer {
     border-radius: 5pt; 
 }
   
-#agenda-approval {
+#agenda-approval  {
     background-color: var(--good-color, rgb(0, 0, 0)); /* Green */
 }
 
@@ -185,56 +188,84 @@ em.emphasis-color{
     border-radius: 5px;
     background-color: #000000;
 }
+
 #back-to-top a {
     text-decoration: none; /* Remove underline */
+    color:rgb(0, 255, 76)
 }
 #back-to-top a:visited {
     color: #ffffff; /* Set color of visited link */
 }
-#back-to-top a:hover{
-    color:#fb00ff;
-}
+#back-to-top a:hover,
 a:visited {
-    color: #f123c4; /* Set color of visited link */
+    color: #fb00ff;
 }
 a:hover{
-    color:#0008ff;
+    color:#005617;
 }
 /* Apply styles when hovering over a button */
 button:hover {
     background-color: rgb(145, 255, 0);
     color: white;
-  }
+}
   
   /* Apply styles when a button is being clicked */
-  button:active {
+button:active, select:active {
     background-color: rgb(255, 0, 200);
-  }
+}
   
   /* Apply styles when hovering over a select element */
-  select:hover {
+select:hover {
     border-color: lightblue;
-  }
-  
-  /* Apply styles when a select element is active (being clicked) */
-  select:active {
-    border-color: rgb(251, 0, 255);
-  }
-  
-  /* Apply styles when hovering over an input element */
-  input:hover {
-    background-color: rgb(255, 0, 55);
-  }
-  
-  /* Apply styles when an input element is active (being clicked) */
-  input:active {
-    background-color: rgb(0, 255, 76);
-  }
-  
+}
 
+/*DOES NOT WORK 
+  input{
+    
+    &:active{
+        background-color: rgb(0, 255, 76);
+    }
+    &:hover{
+        background-color: rgb(114, 209, 196); 
+    }
+  }
+ */ 
+
+
+  input[type="text"],
+  input[type="email"],
+  input[type="browser"] {
+      border: 4px solid rgb(116, 121, 209);
+}
+
+  
 /* CSS Color Variables */
 :root {
     --main-color: #000000; 
     --bad-color: rgb(234, 112, 112);
     --good-color:  rgb(33, 230, 63);
+}
+body ul {
+    list-style-type: square;
+}
+p > span {
+    color:rgb(0, 0, 0);
+}
+/* Select all <section> elements that are siblings of <nav> element and that come after the <nav> element */
+nav ~ section {
+    margin-top: 0px;
+}
+h2 + h3 {
+    color: rgb(116, 121, 209);
+    text-align: center;
+}
+nav:has(a){
+    color: rgb(116, 121, 209);
+}
+
+input:active {
+    background-color: rgb(206, 221, 37);
+}
+input:hover {
+    background-color: rgb(114, 209, 196);
 }
