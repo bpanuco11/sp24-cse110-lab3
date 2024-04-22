@@ -1,9 +1,8 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
-   
-    background-color: rgb(114, 209, 196); /* Lighter Yellow */ 
+    font-family: Georgia, serif;
+    background-color: rgb(114, 209, 196); 
     color: #000000; /* dark gray text color */
 }
 
@@ -11,37 +10,231 @@ hr {
     border: none;
     height: 4px;
     background-color: hsl(0, 0%, 0%); 
+    clear:both;
 }
 
 h1 {
     color: #000000; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 h2 {
     color: color(rgb(0 0 0));
+    text-align: center;
+    text-decoration: underline;
 }
 h3 {
-    color: black; 
+    color: black;
+    text-align: left; 
 }
 
 p {
     color: color(color-mix(black, white));
 }
-
-#agenda-span {
-    background-color: rgb(33, 230, 63) /* Green */
+/* google font*/
+footer {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+}
+/* Absolute Units */
+.box {
+    width: 300px; /* 200 pixels */
+    height: .56in; /* .56 inch */
+    border: 2px solid black;
+    background-color: hsl(0, 0%, 0%);
+}
+.video-container{
+    width: 8.4cm;
+    height: 6.7cm;
+    float: right;
+    background-color: #000000;
+    padding: 0.2cm; 
+    margin: 0.4cm; 
+}
+.brain-2{
+    text-align: left;  
+}
+.brain-1 #brain1-date{
+    text-align: center;
+}
+.brain-2 #brain2-date{
+    text-align: center;
+}
+.brain-1 video{
+    max-width: 150px; /* Adjust the max-width as needed */
+    max-height: 400px; /* Adjust the max-height as needed */
+    background-color: #000000;
+    border-radius: 10px;
 }
 
-#agenda-span2{
-
-    background-color: rgb(234, 112, 112) /* Green */
+.box-models {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 0px;
 }
 
-#important-color{
+.box-model {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.box-model2 {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.box-model3 {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+    grid-gap: 10px; /* Gap between grid items */
+}
+
+/* Grid item styles */
+.grid-item {
+    background-color: #f1f1f1;
+    padding: 1px;
+    text-align: left;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .box-models {
+        flex-direction: column; /* items should appear on same column centered*/
+        align-items: center;
+    }
+}
+@media screen and (max-width: 600px) {
+    #image-data {
+        display: none; /* Hide the image on smaller screens */
+    }
+}
+
+.additional-html-section {
+    clear: both; /* Clears floats */
+}
+
+#image-data{
+    order: 2;
+    float: left;
+    width: 400px; 
+    height: auto; 
+    background-color: #eeff00;
+    margin-right: 20px;
+    margin-left: .50em;
+    margin-bottom: 2vh; 
+    border-style: solid;
+    border-color: #000000; 
+    border-width: 1pt; 
+    border-radius: 5pt; 
+}
+  
+#agenda-approval {
+    background-color: var(--good-color, rgb(0, 0, 0)); /* Green */
+}
+
+#agenda-rejected{
+    background-color: var(--bad-color,  rgb(0, 0, 0));
+}
+
+#important-notice{
     color: #eeff00; 
 }
-
 
 em.emphasis-color{
     color:rgb(116, 121, 209);
     font-weight: bold;
+}
+#image-data {
+    float: right;
+    position: static; /* Position the image relative to the viewport */
+    top: 20px; /* Distance from the top of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+}
+#back-to-top{
+    position: fixed;
+    bottom: 8px;
+    border-radius: 5px;
+    background-color: #000000;
+}
+#back-to-top a {
+    text-decoration: none; /* Remove underline */
+}
+#back-to-top a:visited {
+    color: #ffffff; /* Set color of visited link */
+}
+#back-to-top a:hover{
+    color:#fb00ff;
+}
+a:visited {
+    color: #f123c4; /* Set color of visited link */
+}
+a:hover{
+    color:#0008ff;
+}
+/* Apply styles when hovering over a button */
+button:hover {
+    background-color: rgb(145, 255, 0);
+    color: white;
+  }
+  
+  /* Apply styles when a button is being clicked */
+  button:active {
+    background-color: rgb(255, 0, 200);
+  }
+  
+  /* Apply styles when hovering over a select element */
+  select:hover {
+    border-color: lightblue;
+  }
+  
+  /* Apply styles when a select element is active (being clicked) */
+  select:active {
+    border-color: rgb(251, 0, 255);
+  }
+  
+  /* Apply styles when hovering over an input element */
+  input:hover {
+    background-color: rgb(255, 0, 55);
+  }
+  
+  /* Apply styles when an input element is active (being clicked) */
+  input:active {
+    background-color: rgb(0, 255, 76);
+  }
+  
+
+/* CSS Color Variables */
+:root {
+    --main-color: #000000; 
+    --bad-color: rgb(234, 112, 112);
+    --good-color:  rgb(33, 230, 63);
 }
