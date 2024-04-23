@@ -9,12 +9,14 @@
     <title>Meeting Minutes</title>
     <!--Used to change tab icon-->
     <link rel="icon" href="tab_icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
   </head>
 
-  <body style="background-color: rgb(166, 176, 180);">
+  <body >
     <div style="text-align: center;">
         <h1>Meeting Minutes</h1>
-        <hr style="border-color: black;">
+        <hr>
         <h2>Table of Contents</h2> </div>
         <nav>
             <ul>
@@ -26,7 +28,7 @@
 
             </ul>
         </nav>
-        <hr style="border-color: black;">
+        <hr>
 
     <section id="goals">
       <div style="text-align: center;"><h2>Project Goals</h2></div>
@@ -34,32 +36,37 @@
         <li><p><b>User Experience:</b>&nbsp;Create a visually appealing and user-friendly interface.&nbsp;Focus on intuitive design elements, clear navigation, and responsive layouts to ensure a seamless and <em>enjoyable</em> user experience across all devices.</p></li>
         <li><p><b>Meet Deadlines:</b>&nbsp;Stay on track and meet any deadlines by ensuring everyone is on the same page.&nbsp;Regularly review progress and adjust plans as needed to stay on track and meet project milestones.</p></li>
         <li><p><b>Effective Communication:</b>&nbsp;Make it possible for everyone to communicate any issues if any.&nbsp;Encourage regular updates, feedback, and the sharing of ideas to ensure that everyone is aligned and any issues are addressed promptly.</p></li>
-        <li><p><b>Collaboration and Teamwork:</b>&nbsp;Create a <em>friendly</em> environment where we can all support each other.&nbsp;Encourage cross-functional collaboration to leverage each team member's strengths and expertise for the benefit of the project.</p></li>
-        <li><p><b>Continuous Improvement:</b>&nbsp;Regularly update software components, conduct security audits, and <em>prioritize</em> patches to minimize security risks and enhance the overall security posture of our project.&nbsp;</p></li>
+        <li><p><b>Collaboration and Teamwork:</b>&nbsp;Create a <em class="emphasis-color">friendly</em> environment where we can all support each other.&nbsp;Encourage cross-functional collaboration to leverage each team member's strengths and expertise for the benefit of the project.</p></li>
+        <li><p><b>Continuous Improvement:</b>&nbsp;Regularly update software components, conduct security audits, and <em class="emphasis-color">prioritize</em> patches to minimize security risks and enhance the overall security posture of our project.&nbsp;</p></li>
     </ol>
     </section>
 
-    <hr style="border-color: black;">
+    <hr>
+    <div class="brain-1">
     <section id="brainstorm-1">
-      <div style="text-align: center;"><h2>Brainstorming Session Week # 1</h2>
-    <h3>April 4, 2024</h3></div>
+      <h2>Brainstorming Session Week # 1</h2>
+    <h3 id="brain1-date">April 4, 2024</h3>
     <h3>Present</h3>
     <p><i>Riana,&nbsp;Charlie,&nbsp;David,&nbsp;Ginger,&nbsp;Nikolas,&nbsp;Mark </i></p>
-    <video controls width="300" height="240" style="float: right;" title="Brainstorming Session Week #1 - April 4, 2024">
-      <source src="Meeting.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-
-    <h3>Absent</h3>
-    <p><i>Julio,&nbsp;Milana</i></p>
-    <h3>Addition to Agenda</h3>
+   
+    
+      <h3>Addition to Agenda</h3>
     <ul>
       <li>Discuss potential project ideas</li>
       <li>Assign roles and responsibilities</li>
       <li>Plan team-building activity</li>
       <li>Set next meeting date</li>
 
-  </ul>
+    </ul>
+      
+      <video controls  title="Brainstorming Session Week #1 - April 4, 2024">
+        <source src="Meeting.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  
+  
+    <h3>Absent</h3>
+    <p><i>Julio,&nbsp;Milana</i></p>
     <h3>Comments</h3>
     <ul>
       <li>Riana suggested a new approach to the user interface design, focusing on brighter colors.</li>
@@ -69,7 +76,7 @@
 
   </ul>
     <h3>Agenda Approval</h3>
-    <p>- The agenda for today's meeting was <span style="color:green;font-weight:bold;">approved</span> by:
+    <p>- The agenda for today's meeting was <span id="agenda-rejected">rejected</span> by:
     </p>
       <ul>
         <li>Riana</li>
@@ -81,17 +88,20 @@
         <li>Milana</li>
         <li>David</li>
       </ul>
-      <p>-&nbsp;<strong>Important</strong> message from our TA:</p>
-      <audio controls>
-        <source src="Meeting.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+      <p>-&nbsp;<strong id="important-notice">Important</strong> message from our TA:</p>
+      <div class="box">
+        <audio controls>
+            <source src="Meeting.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
     </section>
-    <hr style="border-color: black;">
-
+  </div>
+    <hr>
+    <div class="brain-2">
     <section id="brainstorm-2">
-      <div style="text-align: center;"><h2>Brainstorming Session Week # 2</h2>
-    <h3>April 5, 2024</h3></div>
+      <h2>Brainstorming Session Week # 2</h2>
+    <h3 id="brain2-date">April 5, 2024</h3>
     <h3>Present</h3>
     <p><i>Riana,&nbsp;Charlie,&nbsp;Ginger,&nbsp;Nikolas,&nbsp;Mark,&nbsp;Julio,&nbsp;Milana</i></p>
     <h3>Absent</h3>
@@ -114,8 +124,9 @@
   </ul>
 
     <h3>Agenda Approval</h3>
-    <p>- The agenda for today's meeting was <span style="color:green;font-weight:bold;">approved</span> by:
-      <img src="image.png" alt="Group Work of the day" width="300" style="float: right;"></p>
+    <p>- The agenda for today's meeting was <span id="agenda-approval">approved</span> by:
+    </p>
+    <img src="image.png" alt="Group Work of the day" id="image-data">
       <ul>
         <li>Riana</li>
         <li>Charlie</li>
@@ -126,8 +137,9 @@
         <li>Milana</li>
       </ul>
     </section>
-    
-    <hr style="border-color: black;">
+    </div>
+
+    <hr>
 
     <section id="tasks">
       <div style="text-align: center;"><h2>Group Member Tasks</h2></div>
@@ -164,10 +176,71 @@
           <p>For additional Information Please ask <a href="https://www.google.com">Google</a>!!!</p>
         </details>  
     </section>
+    <hr>
+    <section id="meeting-resolutions"><h2>Meeting Resolutions</h2></section>
+<div class="box-models">
+  <div class="box-model">
+      <h4>Resolution #1</h4>"Resolved, that the budget for the fiscal year 2024 as presented is approved, 
+      with the following amendments: an increase in the marketing budget by 10% and a reallocation of funds 
+      from the travel budget to the training budget."
+  </div>
+  <div class="box-model2">
+      <h4>Resolution #3</h4>"Resolved, that John Doe is appointed as the new Treasurer of the organization, 
+      effective immediately, in recognition of his dedication and financial expertise."
+  </div>
+  <div class="box-model3">
+    <h4>Resolution #2</h4>
+    "Resolved, that the organization adopts the new social media policy,
+    including a clause requiring all posts to be approved by the communications team for consistency and 
+    branding compliance."
+  </div>
+  </div>
 
-    <hr style="border-color: black;">
-    <section id="elements">
-      <div style="text-align: center;"><h2>Additional HTML Elements</h2></div>
+    <hr>
+    <h2>Issues</h2>
+<div class="grid-container">
+  <div class="grid-item">
+    <h3 style="text-align: center;">Budget Allocation</h3>
+    <ul>
+      <li>Discuss and decide on budget allocation for upcoming projects</li>
+      <li>Review and approve budget proposals</li>
+    </ul>
+  </div>
+  <div class="grid-item">
+    <h3 style="text-align: center;">IT System Upgrade</h3>
+    <ul>
+      <li>Discuss the need for upgrading IT systems</li>
+      <li>Review proposals from IT department</li>
+      <li>Decide on the timeline and budget for the upgrade</li>
+    </ul>
+  </div>
+  <div class="grid-item">
+    <h3 style="text-align: center;">Staffing Concerns</h3>
+    <ul>
+      <li>Discuss staffing issues such as workload distribution and hiring needs</li>
+      <li>Address any concerns raised by team members</li>
+    </ul>
+  </div>
+  <div class="grid-item">
+    <h3 style="text-align: center;">Project Delays</h3>
+    <ul>
+      <li>Review projects that are behind schedule</li>
+      <li>Discuss reasons for delays and possible solutions</li>
+    </ul>
+  </div>
+  <div class="grid-item">
+    <h3 style="text-align: center;">Customer Complaints</h3>
+    <ul>
+      <li>Discuss recent customer complaints</li>
+      <li>Identify trends and possible improvements to address issues</li>
+    </ul>
+  </div>
+</div>
+
+
+    <hr>
+    <section id="elements"><h2>Additional HTML Elements</h2></section>
+    <div class="additional-html-section">
     <form method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name"><br><br>
@@ -210,10 +283,12 @@
       <label for="email">Email:</label>
       <input type="email" id="email2" name="email"><br><br>
   </fieldset>
-</section>
-<hr style="border-color: black;">
+
+</div>
+<hr>
     <footer>
-        <a href="#">Back to Top</a>
+      <div id="back-to-top">
+        <a href="#">Back to Top</a></div>
           <div style="text-align: right;">&copy; 2024 Meeting Minutes. All rights reserved.</div>
         
     </footer>
