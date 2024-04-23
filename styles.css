@@ -1,10 +1,12 @@
-/* styles.css */
+/* change the font of all elements to Georgia */
 * {
     font-family: Georgia, serif;
 }
+
+/*set page background to light blue/green and dark font*/
 body {
     background-color: rgb(114, 209, 196); 
-    color: #000000; /* dark gray text color */
+    color: #000000; 
 }
 
 hr {
@@ -31,14 +33,14 @@ h3 {
 p {
     color: color(color-mix(black, white));
 }
-/* google font*/
+/*Set footer font to GOOGL CUSTOM FONT*/
 footer {
     font-family: "Playfair Display", serif;
     font-weight: bold;
 }
-/* Absolute Units */
+
 .box {
-    width: 300px; /* 200 pixels */
+    width: 300px; /* 300 pixels */
     height: .56in; /* .56 inch */
     border: 2px solid black;
     background-color: hsl(0, 0%, 0%);
@@ -69,6 +71,7 @@ footer {
     border-radius: 10px;
 }
 
+/*solves issue when resizing window*/
 .box-models {
     display: flex;
     flex-wrap: wrap;
@@ -115,14 +118,14 @@ footer {
     grid-gap: 10px; /* Gap between grid items */
 }
 
-/* Grid item styles */
+
 .grid-item {
     background-color: #f1f1f1;
     padding: 1px;
     text-align: left;
 }
 
-/* Media query for smaller screens */
+/* Media query for smaller screens when resizing */
 @media (max-width: 600px) {
     .grid-container {
         grid-template-columns: 1fr; /* Single column layout for smaller screens */
@@ -131,18 +134,18 @@ footer {
 
 @media only screen and (max-width: 800px) {
     .box-models {
-        flex-direction: column; /* items should appear on same column centered*/
+        flex-direction: column; /*all elements appear on the same column and centered*/
         align-items: center;
     }
 }
 @media screen and (max-width: 600px) {
     #image-data {
-        display: none; /* Hide the image on smaller screens */
+        display: none; /* When resized, hide the image at 600px */
     }
 }
 
 .additional-html-section {
-    clear: both; /* Clears floats */
+    clear: both;
 }
 
 #image-data{
@@ -178,7 +181,7 @@ em.emphasis-color{
 }
 #image-data {
     float: right;
-    position: static; /* Position the image relative to the viewport */
+    position: static; /* Position the image static to the viewport */
     top: 20px; /* Distance from the top of the viewport */
     right: 20px; /* Distance from the right of the viewport */
 }
